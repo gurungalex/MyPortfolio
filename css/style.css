@@ -1,0 +1,115 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#portfolio {
+    background-color: black;
+}
+
+#main-section {
+    height: 95vh;
+    width: 100%;
+    padding: 2rem;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.topic-section {
+    border-left: 0.4rem solid#fff;
+    padding: 2rem;
+}
+
+.initial-topic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.2rem;
+    color: #ffffff;
+}
+
+.secondary-topic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3.4rem;
+    background: linear-gradient(45deg, #1dd1a1, #48dbfb, #5d8aa8);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradient-animation 3s ease infinite;
+    background-size: 300% 300%;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.topic-description {
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.topic-button-section .btn {
+    padding: 0.5rem 1.2rem;
+    color: black;
+    background-color: #f7f7f7;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.topic-button-section .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( 120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.topic-button-section .btn:hover::before {
+    left: 100%;
+}
+
+.topic-button-section .btn:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.topic-button-section .btn i {
+    margin-right: 0.5rem;
+}
+
+.main-section-footer {
+    /* background-color: #1dd1a1; */
+    text-align: center;
+    color: #f7f7f7;
+}
+
+.main-section-footer p {
+    font-size: 12px;
+}
